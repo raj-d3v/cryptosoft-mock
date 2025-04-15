@@ -31,7 +31,7 @@ This theme includes:
 
 ## 🧪 Development Phases (Branch Workflow)
 
-This theme is developed in structured phases using Git branches:
+This theme is developed in structured phases:
 
 | Phase | Description                             | Branch Name          |
 |-------|-----------------------------------------|----------------------|
