@@ -1,0 +1,69 @@
+/*
+Theme Name: Cryptosoft Mock
+Author: Raj
+Description: A custom WordPress theme for Cryptosoft Mock project
+Version: 1.0
+*/
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: auto;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header nav a {
+  color: #fff;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #0073aa;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 10px;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+/* ✅ Sticky Footer CSS */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
