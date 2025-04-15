@@ -33,7 +33,7 @@ This theme includes:
 
 This theme is developed in structured phases:
 
-| Phase | Description                             | Branch Name          |
+| Phase | Description                             |  Name                |
 |-------|-----------------------------------------|----------------------|
 | 1     | Theme Setup & Project Initialization    | `phase-1-setup`      |
 | 2     | UI Pages (Home, Login, Register, etc.)  | `phase-2-ui`         |
