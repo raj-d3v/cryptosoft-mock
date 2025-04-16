@@ -6,6 +6,10 @@ function cryptosoft_enqueue_styles() {
 
     // Font Awesome (for icons like user profile)
     wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+    // Assets stylesheet
+    wp_enqueue_style('cryptosoft-assets', get_template_directory_uri() . '/assets/css/style.css');
+
 }
 add_action('wp_enqueue_scripts', 'cryptosoft_enqueue_styles');
 

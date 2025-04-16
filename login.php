@@ -49,60 +49,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['cryptosoft_login'])) {
 get_header();
 ?>
 
-<style>
-    .login-container{
-        max-width: 400px;
-        margin: 50px auto;
-        padding: 30px;
-        border: 1px solid #ddd;
-        border-radius: 12px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    .login-container h2{
-        text-align: center;
-        margin-bottom: 25px; 
-    }
-
-    .login-container input[type="text"],
-    .login-container input[type="password"]{
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 15px;
-        border-radius: 6px;
-        border: 1px solid #ccc;
-    }
-
-    .login-container input[type="submit"]{
-        width: 100%;
-        background: #000;
-        color: #fff;
-        padding: 12px;
-        border: none;
-        border-radius: 6px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .login-container input[type="submit"]:hover{
-        background: #333;
-    }
-
-    .login-container .message {
-        margin-bottom: 15px;
-        padding: 10px;
-        border-radius: 5px;
-        font-size: 14px;
-    }
-
-    .login-container .error {
-        margin-top: 10px;
-        background-color: #ffe0e0;
-        color: #a94442;
-        border: 1px solid #f5c6cb;
-    }
-</style>
 
 <div class="login-container">
 
