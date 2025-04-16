@@ -1,6 +1,6 @@
 /* ------------------------ Global Section ------------------------ */
 body {
-  font-family: sans-serif;
+  font-family: monospace;
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -404,10 +404,9 @@ footer p {
   max-width: 400px;
   margin: 50px auto;
   padding: 30px;
-  border: 1px solid #ddd;
+  background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .registration-container h2 {
@@ -464,12 +463,11 @@ footer p {
 /* ------------------------ Login ------------------------ */
 .login-container {
   max-width: 400px;
-  margin: 50px auto;
+  margin: auto;
   padding: 30px;
-  border: 1px solid #ddd;
+  background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .login-container h2 {
@@ -516,14 +514,6 @@ footer p {
 }
 
 /* ------------------------ Dashbaord ------------------------ */
-/* --- General Styling --- */
-body {
-  background-color: #ededed; /* Background color */
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
 
 /* --- Full Page Decorative Elements --- */
 .background-decorations {
@@ -613,20 +603,18 @@ body {
 .cancel-subscription {
   display: inline-block;
   margin-top: 20px;
-  background-color: #dc143c;
+  background-color: #d9534f;
   color: #fff;
   padding: 12px 40px;
   border-radius: 8px;
-  font-size: 18px;
+  font-size: 17px;
   text-decoration: none;
   font-weight: 600;
   transition: 0.2s ease;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 .cancel-subscription:hover {
-  background-color: #b01030;
-  transform: scale(1.01); /* Slight zoom effect */
+  background-color: #c9302c;
 }
 
 /* --- Logout Button Styling --- */
@@ -637,16 +625,35 @@ body {
   color: #fff;
   padding: 12px 40px;
   border-radius: 8px;
-  font-size: 18px;
+  font-size: 17px;
   text-decoration: none;
   font-weight: 600;
   transition: 0.2s ease;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 .logout-link:hover {
   background-color: #333; /* Darker shade on hover */
-  transform: scale(1.01); /* Slight zoom effect */
+}
+
+/* --- Delete Button Styling --- */
+.delete-account-container {
+  margin-top: 40px;
+}
+
+.delete-account-button {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 14px 24px;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-account-button:hover {
+  background-color: #c9302c;
 }
 
 /* --- Responsive Styling --- */
@@ -677,6 +684,36 @@ body {
   }
 }
 
+/* ------------------------ Goodbye ------------------------ */
+.goodbye-container {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.goodbye-container h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+.goodbye-container p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.home-button {
+  background-color: #111;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.home-button:hover {
+  background-color: #333;
+}
+
 /* ------------------------ Cart ------------------------ */
 
 .cart-container {
@@ -686,7 +723,6 @@ body {
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  font-family: "Roboto", sans-serif;
 }
 
 .cart-container h2 {

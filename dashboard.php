@@ -79,6 +79,55 @@ get_header();
 
     <!-- Logout Block -->
     <a class="logout-link" href="<?php echo wp_logout_url(home_url('/login')); ?>">Logout</a>
+
+
+    <!-- Delete Account Section -->
+    <div class="delete-account-container">
+        
+        <form method="post" onsubmit="return confirm('Are you sure you want to delete your account? This action cannot be undone.');">
+            <input type="hidden" name="delete_account" value="1">
+            <button type="submit" class="delete-account-button">Delete My Account</button>
+        </form>
+
+    </div>
+
+    <?php
+
+        // Ensure user is logged in
+        if(!is_user_logged_in()){
+            wp_redirect(home_url('/login'));
+            exit;
+        }
+
+        // Handle the account deletion
+        if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete_account']) && $_POST['delete_account'] == '1'){
+
+            // First, let's make sure this is the logged-in user
+            if (get_current_user_id() === $current_user->ID) {
+
+                // ✅ Remove user meta data and other data
+                delete_user_meta($current_user->ID, '_user_subscription_status'); // Remove subscription status
+                delete_user_meta($current_user->ID, '_user_subscription_plan');   // Remove subscription plan
+
+                // ✅ Delete the user account and all associated data 
+                require_once( ABSPATH . 'wp-admin/includes/user.php'); // Required for wp_delete_user()
+                wp_delete_user($current_user->ID);
+
+                // ✅ Redirect to homepage after deletion
+                wp_redirect(home_url('/'));
+                exit;
+            } 
+            else 
+            {
+                // If the user is not logged in or there's a mismatch, we don't delete the account
+                wp_redirect(home_url('/goodbye'));
+                exit;
+            }
+        }
+
+    ?>
+
+
 </div>
 
 <?php get_footer(); ?>
